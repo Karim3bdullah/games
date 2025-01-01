@@ -1,0 +1,162 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #272B30;
+    height: 100vh;
+    font-family: "Nerko One", cursive;
+    color: #FFF;
+}
+/* start header */
+header{
+    height: 250px;
+    overflow: hidden;
+    
+}
+/* end header */
+/* start navbar */
+.navbar {
+    background-color: #2a3b66; /* اللون الأزرق الداكن */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    position: static !important;
+  }
+
+  .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #00bcd4 !important; /* اللون الأزرق الفاتح */
+    font-weight: bold;
+  }
+
+/* end navbar */
+/* start cards */
+.inner{
+    border: 1px solid #333; 
+    background-color: transparent;
+    filter: grayscale(75%);
+  transition: all .25s linear;
+  }
+  .inner:hover{
+    filter: grayscale(0);
+    transform: scale(1.059);
+  }
+    .card{
+    border: none;
+      background-color: transparent;
+      height: 300px;
+    }
+   .top-content h3{
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  /* margin-left: 4px; */
+   }
+   .top-content span{
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #0D6EFD;
+  /* margin-right: 4px; */
+   }
+   .content p{
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+   }
+  .bottom-content {
+  background-color:transparent;
+  border-top: 1px solid #333;
+  }
+  .bottom-content span{
+  background-color: #32383e;
+  
+  }
+/* end cards */
+
+/* start loader */
+.loading {
+  position: fixed; /* يضمن أن العنصر يظل في نفس المكان بالنسبة للنافذة */
+  top: 50%; /* 50% من ارتفاع الشاشة */
+  left: 50%; /* 50% من عرض الشاشة */
+  transform: translate(-50%, -50%); /* يضمن تمركز العنصر بالكامل */
+  z-index: 1000; /* لو عندك عناصر أخرى على الصفحة */
+  background-color: rgba(0, 0, 0, 0.5); /* لون شفاف لو عايز */
+  width: 100vw; /* غطي عرض الشاشة بالكامل */
+  height: 100vh; /* غطي ارتفاع الشاشة بالكامل */
+  display: none; /* يبدأ مخفي */
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+/* end loader */
+
+
+/* start details  */
+.header h1{
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 500;
+  
+}
+
+.description a{
+color: #fff;
+}
+.description a:hover{
+color: #fff;
+}
+/* end details  */
